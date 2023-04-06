@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
-
+//test
 namespace Player
 {
     public class GameUIInputView : MonoBehaviour, IEntityInputSource
