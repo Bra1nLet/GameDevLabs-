@@ -4,6 +4,7 @@ using System.Linq;
 using Core.Entity.Brain;
 using Core.Services.Updater;
 using InputReader;
+using Items;
 using StatsSystem;
 using UnityEngine;
 
@@ -16,7 +17,8 @@ namespace Player
         private readonly ProjectUpdater _projectUpdater;
         private readonly PlayerEntity _playerEntity;
         private readonly PlayerBrain _playerBrain;
-        private readonly StatsController _statsController;
+        public StatsController StatsController { get; }
+        public Inventory Inventory { get; }
 
         private List<IDisposable> _disposables;
         
@@ -26,14 +28,16 @@ namespace Player
            
             var statsStorage = Resources.Load<StatsStorage>($"Player/{nameof(StatsStorage)}");
             var stats = statsStorage.Stats.Select(stat => stat.GetCopy()).ToList();
-            _statsController = new StatsController(stats);
-            _disposables.Add(_statsController);
+            StatsController = new StatsController(stats);
+            _disposables.Add(StatsController);
             
             _playerEntity = playerEntity;
-            _playerEntity.Initialize(_statsController);
+            _playerEntity.Initialize(StatsController);
             
             _playerBrain = new PlayerBrain(_playerEntity, inputSources);
             _disposables.Add(_playerBrain);
+
+            Inventory = new Inventory(null, null, _playerEntity.transform, new EquipmentConditionChecker());
         }
 
         public void Dispose()

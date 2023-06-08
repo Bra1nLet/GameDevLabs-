@@ -48,8 +48,7 @@ namespace Player
         private void UpdateAnimation()
         {
             _animatorController.SetAnimationState(AnimationType.Death, _directionalMover.IsMoving, speedH: _directionalMover.GetHSpeed(), speedV: _directionalMover.GetVSpeed());
-            _animatorController.SetAnimationState(AnimationType.Hit, _directionalMover.IsMoving, speedH: _directionalMover.GetHSpeed(), speedV: _directionalMover.GetVSpeed());
-      
+         
         }
 
         public void StartAttack()

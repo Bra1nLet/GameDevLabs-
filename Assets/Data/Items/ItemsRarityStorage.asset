@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ef3ce74c7d4f6a8a54386edd80ed93, type: 3}
+  m_Name: ItemsRarityStorage
+  m_EditorClassIdentifier: 
+  <RarityDescriptors>k__BackingField:
+  - <ItemRarity>k__BackingField: 0
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 533abca1f345417e984b150a43d1ef78, type: 3}
+    <Color>k__BackingField: {r: 0.5294118, g: 0.31764707, b: 0.13333334, a: 1}
+  - <ItemRarity>k__BackingField: 1
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 176661c66228466f9f74c027f6d60f9f, type: 3}
+    <Color>k__BackingField: {r: 0.30980393, g: 0.30980393, b: 0.30980393, a: 1}
+  - <ItemRarity>k__BackingField: 2
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 6a7965a697c24a689633cfa2a821ca7e, type: 3}
+    <Color>k__BackingField: {r: 0, g: 0.27450982, b: 0.37254903, a: 1}
+  - <ItemRarity>k__BackingField: 3
+    <Sprite>k__BackingField: {fileID: 21300000, guid: b7b50a648b914b71a63c6ede8a31ea9b, type: 3}
+    <Color>k__BackingField: {r: 0.3019608, g: 0.3803922, b: 0.003921569, a: 1}
+  - <ItemRarity>k__BackingField: 4
+    <Sprite>k__BackingField: {fileID: 21300000, guid: dbff44ea28934646b14fff229f0db0d9, type: 3}
+    <Color>k__BackingField: {r: 0.34117648, g: 0.09019608, b: 0, a: 1}
+  - <ItemRarity>k__BackingField: 5
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 3d210ed8562242d3804c2502b7312c3a, type: 3}
+    <Color>k__BackingField: {r: 0.27450982, g: 0.10588236, b: 0.36862746, a: 1}
